@@ -1,18 +1,18 @@
 const router = require("express").Router()
 const {Workout}= require("../models")
 
-app.get("/notes", (req, res) => {
-    db.Note.find({})
-      .then(dbNote => {
-        res.json(dbNote);
+router.get("/", (req, res) => {
+    Workout.find({})
+      .then(dbWorkout => {
+        res.json(dbWorkout);
       })
       .catch(err => {
         res.json(err);
       });
   });
   
-  app.get("/user", (req, res) => {
-    db.User.find({})
+  router.put("/:id", (req, res) => {
+    User.find({})
       .then(dbUser => {
         res.json(dbUser);
       })
@@ -21,9 +21,8 @@ app.get("/notes", (req, res) => {
       });
   });
   
-  app.post("/submit", ({ body }, res) => {
-    db.Note.create(body)
-      .then(({ _id }) => db.User.findOneAndUpdate({}, { $push: { notes: _id } }, { new: true }))
+  router.post("/", ( req,res) => {
+   User.findOneAndUpdate({}, { $push: { exercises: [req.body] } }, { new: true })
       .then(dbUser => {
         res.json(dbUser);
       })
