@@ -35,7 +35,7 @@ Workout-Tracker provides the user with plenty of functionality to help them reac
 ## Screenshots
 ![Screen Shot 2021-04-08 at 2 28 25 AM](https://user-images.githubusercontent.com/77504986/114003308-7f72df00-9812-11eb-89dd-4378c85eee9b.png)
 ![Screen Shot 2021-04-08 at 2 28 33 AM](https://user-images.githubusercontent.com/77504986/114003362-8863b080-9812-11eb-94db-20c0121f0f41.png)
-ç![Screen Shot 2021-04-08 at 2 28 50 AM](https://user-images.githubusercontent.com/77504986/114003183-65390100-9812-11eb-92ca-b082af7f9450.png)
+![Screen Shot 2021-04-08 at 2 28 50 AM](https://user-images.githubusercontent.com/77504986/114003183-65390100-9812-11eb-92ca-b082af7f9450.png)
 
 
 
